@@ -20,15 +20,11 @@ func handler(writer http.ResponseWriter, request *http.Request) {
 }
 
 func calculiBisects(n int) bool {
-	d := "Sin Datos"
-	if (n % 4 == 0 && n % 100 != 0) || (n % 100 == 0 && n % 400 == 0) {
-		
-		d  = true
+	if (n % 4 == 0 && n % 100 != 0) || (n % 100 == 0 && n % 400 == 0) {	
+		return true
 	} else {
-		d  = false
+		return  false
 	}
-
-	return d
 }
 
 func main() {
