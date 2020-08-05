@@ -4,11 +4,13 @@ import (
     "fmt"
     "net/http"
     "os"
+	"strconv"
 )
 
 func handler(writer http.ResponseWriter, request *http.Request) {
     num := request.URL.Path[1:]
-    fmt.Fprintf(writer, calculiBisects(num), request.URL.Path[1:])
+	 anno, err := strconv.Atoi(request.URL.Path[1:])
+	fmt.Fprintf(writer, calculiBisects(anno), request.URL.Path[1:])
 }
 
 func calculiBisects(n int) string {
