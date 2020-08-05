@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func calculiBisects(n int) bool {
+func calculiBisects2(n int) bool {
 
 	if (n % 4 == 0 && n % 100 != 0) || (n % 100 == 0 && n % 400 == 0) {
 		//System.out.println("El año " + anio + " es bisiesto");
@@ -17,11 +17,11 @@ func calculiBisects(n int) bool {
 
 }
 
-func plus(a int) int {
+func plus2(a int) int {
 	return a * 5
 }
 
-func handler(writer http.ResponseWriter, request *http.Request) {
+func handler2(writer http.ResponseWriter, request *http.Request) {
 	year, err := strconv.Atoi(request.URL.Path[1:])
 	if err == nil {
 		if calculiBisects(year) {
@@ -34,7 +34,7 @@ func handler(writer http.ResponseWriter, request *http.Request) {
 	}
 }
 
-func main() {
+func main2() {
 	fmt.Println("Calculate Bisiesto")
 
 	fmt.Print("Enter year: ")
