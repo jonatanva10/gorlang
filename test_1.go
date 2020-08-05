@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func handler(writer http.ResponseWriter, request *http.Request) {
+func handler2(writer http.ResponseWriter, request *http.Request) {
 	//num := request.URL.Path[1:]
 	year, err := strconv.Atoi(request.URL.Path[1:])
 	if err == nil {
@@ -21,7 +21,7 @@ func handler(writer http.ResponseWriter, request *http.Request) {
 	}
 }
 
-func calculiBisects(n int) bool {
+func calculiBisects2(n int) bool {
 	if (n % 4 == 0 && n % 100 != 0) || (n % 100 == 0 && n % 400 == 0) {	
 		return true
 	} else {
@@ -29,7 +29,7 @@ func calculiBisects(n int) bool {
 	}
 }
 
-func main() {
+func main2() {
     http.HandleFunc("/", handler)
     http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
