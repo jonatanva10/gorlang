@@ -49,5 +49,4 @@ func main() {
     http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
 
-http.HandleFunc("/", handler)
-    http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+
