@@ -19,13 +19,13 @@ func handler(writer http.ResponseWriter, request *http.Request) {
   }
 }
 
-func calculiBisects(n int) string {
+func calculiBisects(n int) bool {
 	d := "Sin Datos"
 	if (n % 4 == 0 && n % 100 != 0) || (n % 100 == 0 && n % 400 == 0) {
 		
-		d  = "Año Bisiesto"
+		d  = true
 	} else {
-		d  = "Año No Bisiesto"
+		d  = false
 	}
 
 	return d
