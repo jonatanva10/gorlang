@@ -35,13 +35,19 @@ func handler(writer http.ResponseWriter, request *http.Request) {
 }
 
 func main() {
-	fmt.Println("Calculate Bisiesto")
+	//fmt.Println("Calculate Bisiesto")
 
-	fmt.Print("Enter year: ")
-	var input int
-	var otherResult bool
-	fmt.Scanln(&input)
+	//fmt.Print("Enter year: ")
+	//var input int
+	//var otherResult bool
+	//fmt.Scanln(&input)
 
-	otherResult = calculiBisects(input)
-	fmt.Print(otherResult)
+	//otherResult = calculiBisects(input)
+	//fmt.Print(otherResult)
+	
+	http.HandleFunc("/", handler)
+    http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
+
+http.HandleFunc("/", handler)
+    http.ListenAndServe(":"+os.Getenv("PORT"), nil)
