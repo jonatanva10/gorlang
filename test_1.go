@@ -4,11 +4,11 @@ import (
     "fmt"
     "net/http"
     "os"
-	"strconv"
+    "strconv"
 )
 
-func handler2(writer http.ResponseWriter, request *http.Request) {
-	//num := request.URL.Path[1:]
+func handler(writer http.ResponseWriter, request *http.Request) {
+	
 	year, err := strconv.Atoi(request.URL.Path[1:])
 	if err == nil {
 		if calculiBisects(year) {
@@ -29,7 +29,7 @@ func calculiBisects(n int) bool {
 	}
 }
 
-func main2() {
+func main() {
     http.HandleFunc("/", handler)
     http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
