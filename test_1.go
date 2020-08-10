@@ -21,7 +21,7 @@ func handler2(writer http.ResponseWriter, request *http.Request) {
 	}
 }
 
-func calculiBisects2(n int) bool {
+func calculiBisects(n int) bool {
 	if (n % 4 == 0 && n % 100 != 0) || (n % 100 == 0 && n % 400 == 0) {	
 		return true
 	} else {
