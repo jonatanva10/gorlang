@@ -4,6 +4,7 @@ import (
     "encoding/json"
     "net/http"
     "path"
+	"sort"
 )
 
 func find(x string) int {
@@ -16,12 +17,14 @@ func find(x string) int {
 }
 
 func findObject(x string) Book {
+	bookTemp := Book{}
     for i, book := range books {
         if x == book.Id {
-            return books[i]
+			bookTemp:= books[i]
+            return bookTemp
         }
-    }
-    return Book{ Id:"Cachi", Title: "Pelicula 1"}
+    }	
+    return bookTemp
 }
 
 func findByTitle(x string) int {
@@ -38,7 +41,7 @@ func handleGet(w http.ResponseWriter, r *http.Request) (err error) {
     checkError("Parse error", err)
     i := find(id)
     if i == -1 {		
-		getAllData, e := json.Marshal(books[1:])
+		getAllData, e := json.Marshal(books[1:])//books[1:]
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(getAllData) 
 		return e      
@@ -92,38 +95,38 @@ func handlePostTemp(w http.ResponseWriter, r *http.Request) (err error) {
 }
 
 func handlePost(w http.ResponseWriter, r *http.Request) (err error) {
-	//id := path.Base(r.URL.Path)
-    //checkError("Parse error", err)
-    //i := find(id)   		
-	//copy(books[i:], books[i+1:]) 
-	//books[len(books)-1] = Book{}     
-	//books = books[:len(books)-1]  
-	//tempList, err := json.Marshal(books[1:])
-
-	//initialize empty user
-	user := Book{} 
-
-	//Parse json request body and use it to set fields on user
-	//Note that user is passed as a pointer variable so that it's fields can be modified
-	err2 := json.NewDecoder(r.Body).Decode(&user)
+	id := path.Base(r.URL.Path)
+	bookSelected:= findObject(id)
+	
+	// Remove Element Duplicated
+	i := find(id)  
+	copy(books[i:], books[i+1:]) 
+	books[len(books)-1] = Book{}     
+	books = books[:len(books)-1] 
+	
+	err2 := json.NewDecoder(r.Body).Decode(&bookSelected) // Replace all fields
 	if err2 != nil{
 		panic(err2)
 	}
 
-	//Set CreatedAt field on user to current local time
-	user.Author = user.Title
-
-	//Marshal or convert user object back to json and write to response 
-	userJson, err := json.Marshal(user)
+	userJson, err := json.Marshal(bookSelected) //user
 	if err != nil{
 		panic(err2)
 	}
 
-	//Set Content-Type header so that clients will know how to read response
-	w.Header().Set("Content-Type", "application/json")	
-	//Write json response back to response 
-	w.Write(userJson)
-	books = append(books, user)
+	w.Header().Set("Content-Type", "application/json")		
+	w.Write(userJson)	
+	
+	books = append(books, bookSelected) // Add last position
+	
+	// Sorting Array
+	sort.SliceStable(books[0:], func(i, j int) bool {
+		return books[i].Id < books[j].Id
+	})	
+	
+	headers:= books[len(books)-1]
+	books = books[:len(books)-1]
+	books = append([]Book{headers}, books...) // Add start position
 	return
 	}
 
