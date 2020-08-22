@@ -1,0 +1,103 @@
+openapi: 3.0.0
+info:
+  title: Books API
+  description: This web service offers information on books
+  version: 0.1.9
+servers:
+- url: http://webservice_booksapps.netlify.org
+  description: web service published on netlify
+paths:
+  /books/{bookId}:
+    get:
+      summary: Returns a book by ID.
+      parameters:
+      - name: bookId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+    put:
+      summary: Update book information
+      parameters:
+      - name: bookId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        description: Book data
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+        required: true
+      responses:
+        "200":
+          description: OK
+    delete:
+      summary: Delete a book by ID.
+      parameters:
+      - name: bookId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+  /books/:
+    post:
+      summary: Create a new book
+      requestBody:
+        description: Book data
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+        required: true
+      responses:
+        "200":
+          description: OK
+components:
+  schemas:
+    Book:
+      type: object
+      properties:
+        bookId:
+          type: string
+        title:
+          type: string
+        edition:
+          type: string
+        copyright:
+          type: string
+        language:
+          type: string
+        pages:
+          type: string
+        author:
+          type: string
+        publisher:
+          type: string
+      example:
+        copyright: "2015"
+        pages: "1054"
+        author: Silbertzhz
+        edition: 4th
+        publisher: Mc Graw Hill
+        language: ENGLISH
+        title: Database System
+        bookId: book01
