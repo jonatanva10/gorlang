@@ -19,8 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87a98c23-e501-4255-8f32-4e5b1330511c" name="Default Changelist" comment="Example via golang">
+    <list default="true" id="87a98c23-e501-4255-8f32-4e5b1330511c" name="Default Changelist" comment="Build fail code">
+      <change beforePath="$PROJECT_DIR$/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/swagger.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/api_default.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/api_default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/model_book.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/model_book.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/routers.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/routers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +75,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Example via golang" />
-    <option name="LAST_COMMIT_MESSAGE" value="Example via golang" />
+    <MESSAGE value="Build fail code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build fail code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2118" y="353" key="#Go_Modules" timestamp="1598128984759">
@@ -83,9 +91,9 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="1772" y="211" key="DiffContextDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1598129266376" />
-    <state x="1918" y="240" key="Vcs.Push.Dialog.v2" timestamp="1598129269080">
+    <state x="1918" y="240" key="Vcs.Push.Dialog.v2" timestamp="1598130540780">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="1918" y="240" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1598129269080" />
+    <state x="1918" y="240" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1598130540780" />
   </component>
 </project>
