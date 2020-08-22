@@ -19,7 +19,7 @@ import (
 	//
 	//    sw "github.com/myname/myrepo/go"
 	//
-	sw "github.com/jonatanva10/gorlang/go"
+	sw "./go"
 )
 
 func main() {
@@ -27,5 +27,6 @@ func main() {
 
 	router := sw.NewRouter()
 
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe("", router))
+	//log.Fatal(http.ListenAndServe(":8080", router))
 }
