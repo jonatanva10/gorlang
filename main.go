@@ -9,7 +9,7 @@
 package main
 
 import (
-	sw "github.com/arce/gorlang/go"
+	sw "github.com/jonatanva10/gorlang/go"
 	"log"
 	"net/http"
 	"os"

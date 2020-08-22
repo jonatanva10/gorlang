@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87a98c23-e501-4255-8f32-4e5b1330511c" name="Default Changelist" comment="Build fail code">
-      <change beforePath="$PROJECT_DIR$/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/api_default.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/api_default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/model_book.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/model_book.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/routers.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/routers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
