@@ -9,10 +9,10 @@
 package main
 
 import (
+	sw "github.com/jonatanva10/gorlang"
 	"log"
-    "net/http"
-    "os"
-	sw "github.com/jonatanva10/gorlang/go"
+	"net/http"
+	"os"
 )
 
 func main() {
