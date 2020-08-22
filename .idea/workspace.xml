@@ -19,15 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87a98c23-e501-4255-8f32-4e5b1330511c" name="Default Changelist" comment="Build fail code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    <list default="true" id="87a98c23-e501-4255-8f32-4e5b1330511c" name="Default Changelist" comment="Rebuild">
+      <change afterPath="$PROJECT_DIR$/go.sum.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
@@ -43,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -70,7 +76,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Example via golang" />
     <MESSAGE value="Build fail code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build fail code" />
+    <MESSAGE value="Rebuild" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rebuild" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2118" y="353" key="#Go_Modules" timestamp="1598128984759">
@@ -85,9 +92,9 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="1772" y="211" key="DiffContextDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1598129266376" />
-    <state x="1918" y="240" key="Vcs.Push.Dialog.v2" timestamp="1598130540780">
+    <state x="1918" y="240" key="Vcs.Push.Dialog.v2" timestamp="1598131660386">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="1918" y="240" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1598130540780" />
+    <state x="1918" y="240" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1598131660386" />
   </component>
 </project>
