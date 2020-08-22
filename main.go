@@ -10,16 +10,8 @@ package main
 
 import (
 	"log"
-	"net/http"
-
-	// WARNING!
-	// Change this to a fully-qualified import path
-	// once you place this file into your project.
-	// For example,
-	//
-	//    sw "github.com/myname/myrepo/go"
-	//
-	//sw "./go"
+    "net/http"
+    "os"
 	sw "github.com/jonatanva10/gorlang/go"
 )
 
@@ -28,6 +20,6 @@ func main() {
 
 	router := sw.NewRouter()
 
-	log.Fatal(http.ListenAndServe("", router))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), router))
 	//log.Fatal(http.ListenAndServe(":8080", router))
 }
