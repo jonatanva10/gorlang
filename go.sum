@@ -1,0 +1,3 @@
+github.com/gorilla/mux v1.7.4/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/jonatanva10/gorlang v0.0.0-20200822184739-c2ecbf7fdb3a h1:KvxPlWzc257utfbIQcy/O7b4Ydng8zhOh9qMhhNJ1WQ=
+github.com/jonatanva10/gorlang v0.0.0-20200822184739-c2ecbf7fdb3a/go.mod h1:0auInDjnL+ZilNNIyxXdfq6xoq2jyNhpGowCzmHATeE=
